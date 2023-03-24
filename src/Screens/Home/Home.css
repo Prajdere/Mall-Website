@@ -1,0 +1,463 @@
+.home-container {
+  margin: 10rem 0;
+  min-height: calc(100vh - 10rem);
+  position: relative;
+}
+.home-container .corousal {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #333;
+}
+.home-container .corousal .corousal1,
+.home-container .corousal .corousal2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('../../Images/corousal1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s linear;
+}
+.home-container .corousal .corousal1 .corousal1-text,
+.home-container .corousal .corousal2 .corousal1-text {
+  background-image: url('../../Images/corousal1_text.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 10rem;
+  width: 40%;
+  height: 60%;
+  transform: translateY(-50%);
+}
+.home-container .corousal .corousal2 {
+  background-image: url('../../Images/corousal2.png');
+}
+.home-container .corousal .left-icon {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 6rem;
+  background-image: url('../../Images/left-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+  cursor: pointer;
+}
+.home-container .corousal .right-icon {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../Images/right-arrow.png');
+  z-index: 2;
+  cursor: pointer;
+}
+.home-container .section1 {
+  height: 100vh;
+  width: 100%;
+  padding: 1rem 0;
+}
+.home-container .section1 .section1-title {
+  width: 100%;
+  height: 8rem;
+  background-image: url('../../Images/Fashionista\ in\ You\ watermark.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 8%;
+}
+.home-container .section1 .section1-title .icon {
+  background-image: url('../../Images/icon.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+.home-container .section1 .section1-title .title {
+  width: 100%;
+  height: 3rem;
+  background-image: url('../../Images/Fashionista\ in\ You.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.home-container .section1 .section1-banner {
+  width: 100%;
+  height: calc(100% - 8rem);
+  margin-top: 1rem;
+  padding: 1rem;
+  display: grid;
+  /* grid-gap: 16px; */
+  padding: 16px;
+  grid-template-columns: 25% 50% 50% 50% 25%;
+  overflow-x: auto;
+  color: #fffcfc;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.home-container .section1 .section1-banner > div {
+  width: 100%;
+  height: 100%;
+}
+.home-container .section1 .section1-banner .col1 {
+  background-image: url('../../Images/Section1/pic1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.home-container .section1 .section1-banner .col1 .text {
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col1:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col2,
+.home-container .section1 .section1-banner .col3,
+.home-container .section1 .section1-banner .col4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.home-container .section1 .section1-banner .col2 .row1 {
+  width: 32%;
+  height: 50%;
+}
+.home-container .section1 .section1-banner .col2 .row1 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col2 .row1 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col2 .row1 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col2 .row2 {
+  width: 66%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.home-container .section1 .section1-banner .col2 .row2 .img {
+  width: 100%;
+  height: 80%;
+  background-image: url('../../Images/Section1/pic3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col2 .row2 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col2 .row2 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col2 .row3 {
+  width: 66%;
+  height: 50%;
+}
+.home-container .section1 .section1-banner .col2 .row3 .img {
+  width: 90%;
+  height: 85%;
+  background-image: url('../../Images/Section1/pic4.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col2 .row3 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col2 .row3 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col2 .row4 {
+  width: 32%;
+  height: 50%;
+}
+.home-container .section1 .section1-banner .col2 .row4 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic5.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col2 .row4 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col2 .row4 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col5 {
+  background-image: url('../../Images/Section1/pic14.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-container .section1 .section1-banner .col3 .row1 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col3 .row1 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic6.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col3 .row1 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col3 .row1 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col3 .row2 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col3 .row2 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic7.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col3 .row2 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col3 .row2 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col3 .row3 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col3 .row3 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic8.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col3 .row3 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col3 .row3 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col3 .row4 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col3 .row4 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic9.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col3 .row4 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col3 .row4 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col4 .row1 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col4 .row1 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic10.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col4 .row1 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col4 .row1 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col4 .row2 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col4 .row2 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic11.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col4 .row2 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col4 .row2 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col4 .row3 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col4 .row3 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic12.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col4 .row3 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col4 .row3 .img:hover .text {
+  opacity: 1;
+}
+.home-container .section1 .section1-banner .col4 .row4 {
+  width: 49%;
+  height: 49%;
+}
+.home-container .section1 .section1-banner .col4 .row4 .img {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../Images/Section1/pic13.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.home-container .section1 .section1-banner .col4 .row4 .img .text {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home-container .section1 .section1-banner .col4 .row4 .img:hover .text {
+  opacity: 1;
+}
